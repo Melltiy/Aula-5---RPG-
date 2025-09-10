@@ -33,7 +33,7 @@ namespace AppRpgEtec.viewModel.Usuarios
 
         public ICommand DirecionarCadastroCommand { get; set; } 
 
-
+         
 
         public async Task RegistrarUsuario()//Método para registrar um usúario
         {
@@ -126,7 +126,7 @@ namespace AppRpgEtec.viewModel.Usuarios
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
 
-                    Application.Current.MainPage = new ListagemView();
+                    Application.Current.MainPage = new AppShell();
                 }
                 else
                 {

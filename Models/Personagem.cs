@@ -9,6 +9,8 @@ namespace AppRpgEtec.Models
 {
     public class Personagem
     {
+        internal object id;
+
         public int Id { get; set; }
         public string Nome { get; set; }
         public int PontosVida { get; set; }
